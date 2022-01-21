@@ -35,7 +35,7 @@
 
 (def auth-params {:client-id     secret/client-id
                   :response-type "code"
-                  :redirect-uri  "https://www.google.com"
+                  :redirect-uri  "http://localhost:8888/callback"
                   :scope         ["user-library-read", "playlist-modify-private"]})
 
 
