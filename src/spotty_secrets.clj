@@ -1,5 +1,7 @@
 (ns spotty-secrets)
 
-(def client-secret "c88c07ce436a4b4ea1317932dad3f6d7")
+;; Credentials come from the environment, never from source.
+;; export SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=...
+(def client-secret (System/getenv "SPOTIFY_CLIENT_SECRET"))
 
-(def client-id "734d63864a3d45b7af379c307b8143bc")
+(def client-id (System/getenv "SPOTIFY_CLIENT_ID"))
